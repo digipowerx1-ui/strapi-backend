@@ -20,14 +20,6 @@
     "email": {
       "type": "email"
     },
-    "subject": {
-      "type": "enumeration",
-      "enum": [
-        "\"General\", ",
-        "\"Support\", ",
-        "\"Feedback\""
-      ]
-    },
     "message": {
       "type": "richtext"
     }

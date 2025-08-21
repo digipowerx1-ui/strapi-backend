@@ -398,9 +398,6 @@ export interface ApiContactFormContactForm extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     message: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
-    subject: Schema.Attribute.Enumeration<
-      ['"General", ', '"Support", ', '"Feedback"']
-    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
