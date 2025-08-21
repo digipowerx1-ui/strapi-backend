@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sec_filings",
+  "info": {
+    "singularName": "sec-filing",
+    "pluralName": "sec-filings",
+    "displayName": "sec-filing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "form_type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "pdf_file": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "form_type"
+    }
+  }
+}
