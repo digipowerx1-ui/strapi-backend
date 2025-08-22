@@ -17,9 +17,6 @@
     "date": {
       "type": "date"
     },
-    "excerpt": {
-      "type": "string"
-    },
     "content": {
       "type": "richtext"
     },
@@ -35,6 +32,16 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "pdfFile": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
